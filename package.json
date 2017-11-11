@@ -1,0 +1,20 @@
+{
+  "name": "browser-detect",
+  "version": "1.0.0",
+  "description": "A simple module based on detectmobilebrowsers.com with readable regular expression blocks.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshithkashyap/browser-detect.git"
+  },
+  "keywords": [
+    "browser",
+    "detect"
+  ],
+  "author": "Harshith Kashyap <harshithkashyap@hotmail.com> (https://github.com/harshithkashyap)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harshithkashyap/browser-detect/issues"
+  },
+  "homepage": "https://github.com/harshithkashyap/browser-detect#readme"
+}
