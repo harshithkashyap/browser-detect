@@ -1,5 +1,5 @@
 {
-  "name": "hk-browser-detect",
+  "name": "es-browser-detect",
   "version": "1.0.0",
   "description": "A simple module based on detectmobilebrowsers.com with readable regular expression blocks.",
   "main": "index.js",

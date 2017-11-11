@@ -4,7 +4,7 @@ This is a simple javascript module based on [detectmobilebrowsers](http://detect
 
 ### Installation
 ```bash
-$ npm install hk-browser-detect --save
+$ npm install es-browser-detect --save
 ```
 
 ### Usage
