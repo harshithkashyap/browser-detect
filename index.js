@@ -1,4 +1,4 @@
-const group1 = [
+var group1 = [
     '(android|bb\d+|meego).+mobile',
     'avantgo',
     'bada\/',
@@ -36,7 +36,7 @@ const group1 = [
     'xiino'
 ].join('|');
 
-const group2 = [
+var group2 = [
     '1207',
     '6310',
     '6590',
@@ -225,7 +225,7 @@ const group2 = [
     'zte\-'
 ].join('|');
 
-const tabletGroup = [
+var tabletGroup = [
     'android',
     'ipad',
     'playbook',
