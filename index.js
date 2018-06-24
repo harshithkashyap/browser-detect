@@ -233,25 +233,30 @@ const tabletGroup = [
 ].join('|');
 
 
-export class BrowserDetect {
-    constructor() {
-        this.userAgent = navigator.userAgent || navigator.vendor || window['opera'];
-        this.group1RegExp = new RegExp(group1, 'i');
-        this.group2RegExp = new RegExp(group2, 'i');
-        this.tabletRegExp = new RegExp(tabletGroup, 'i');
-    }
+var BrowserDetect = function() {
+    this.userAgent = navigator.userAgent || navigator.vendor || window['opera'];
+    this.group1RegExp = new RegExp(group1, 'i');
+    this.group2RegExp = new RegExp(group2, 'i');
+    this.tabletRegExp = new RegExp(tabletGroup, 'i');
+}; 
 
-    isMobile() {
-        return this.group1RegExp.test(this.userAgent)
-            || this.group2RegExp.test(this.userAgent.substr(0, 4));
-    }
+BrowserDetect.prototype.isMobile = function () {
+    return this.group1RegExp.test(this.userAgent)
+        || this.group2RegExp.test(this.userAgent.substr(0, 4));
+};
 
-    isTablet() {
-        return this.tabletRegExp.test(this.userAgent)
-            || this.group2RegExp.test(this.userAgent.substr(0, 4));
-    }
+BrowserDetect.prototype.isMobile = function () {
+    return this.group1RegExp.test(this.userAgent)
+        || this.group2RegExp.test(this.userAgent.substr(0, 4));
+};
 
-    isMobileOrTablet() {
-        return this.isMobile() || this.isTablet();
-    }
-}
+BrowserDetect.prototype.isTablet = function () {
+    return this.tabletRegExp.test(this.userAgent)
+        || this.group2RegExp.test(this.userAgent.substr(0, 4));
+};
+
+BrowserDetect.prototype.isMobileOrTablet = function () {
+    return this.isMobile() || this.isTablet();
+};
+
+module.exports = BrowserDetect;

@@ -1,6 +1,6 @@
 {
   "name": "es-browser-detect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple module based on detectmobilebrowsers.com with readable regular expression blocks.",
   "main": "index.js",
   "repository": {
